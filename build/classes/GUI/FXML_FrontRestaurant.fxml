@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="MenuPane" prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXML_FrontRestaurantController">
+   <children>
+      <Label layoutX="61.0" layoutY="46.0" text="NOS MENUS" textFill="#f04e3c">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="967.0" layoutY="394.0" mnemonicParsing="false" onAction="#next" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: transparent;" styleClass="btn" stylesheets="@list.css">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8-arrow-30.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="29.0" layoutY="394.0" mnemonicParsing="false" onAction="#pred" prefHeight="69.0" prefWidth="174.0" style="-fx-background-color: transparent;" styleClass="btn">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8-arrow-60.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="PDF" layoutX="957.0" layoutY="143.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="21.0" styleClass="btn" stylesheets="@list.css">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-pdf-2-100.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ComboBox fx:id="idPlatpdf" layoutX="766.0" layoutY="145.0" prefHeight="36.0" prefWidth="174.0" styleClass="comboBox" stylesheets="@list.css" />
+      <Text fill="#2c234d" fontSmoothingType="LCD" layoutX="52.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imprimer un plat à votre choix sans voir toute la liste ! " wrappingWidth="686.458984375">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="GoToPlats" layoutX="654.0" layoutY="145.0" mnemonicParsing="false" onAction="#GoToPlat" prefHeight="31.0" prefWidth="100.0" styleClass="btn" stylesheets="@list.css" text="Plats">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-invisible-100.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="200.0" fitWidth="180.0" layoutX="1039.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LogoGymBlack.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="479.0" fitWidth="787.0" layoutX="177.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/kisspng-paper-black-and-white-picture-frame-pattern-paper-png-5a85b2a6678e97.2910285015187114624242.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="306.0" fitWidth="372.0" layoutX="366.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.1;">
+         <image>
+            <Image url="@images/menu.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="menuN" alignment="CENTER" contentDisplay="CENTER" layoutX="242.0" layoutY="247.0" prefHeight="421.0" prefWidth="641.0" text="                           " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="monAnchorPane" prefHeight="760.0" prefWidth="1233.0" stylesheets="@list.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXML_MenuController">
+
+    <children>
+      <StackPane layoutX="285.0" layoutY="33.0" />
+      <Button fx:id="Afficher" layoutX="880.0" layoutY="72.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="153.0" styleClass="btn" stylesheets="@dashboardDesign.css" text="Afficher Actions">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-available-updates-50.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="Refresh" layoutX="286.0" layoutY="72.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="54.0" styleClass="btn" stylesheets="@dashboardDesign.css">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-available-updates-50.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TextField fx:id="fxrecherche" layoutX="369.0" layoutY="73.0" prefHeight="40.0" prefWidth="282.0" promptText="Search ..." styleClass="search" stylesheets="@dashboardDesign.css" />
+      <ImageView fitHeight="23.0" fitWidth="31.0" layoutX="621.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/icons8_search_500px.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Trier" layoutX="675.0" layoutY="72.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="74.0" styleClass="btn" stylesheets="@dashboardDesign.css" text="Nom" />
+      <Button fx:id="captureEcran" layoutX="1046.0" layoutY="72.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" styleClass="btn" stylesheets="@dashboardDesign.css" text="Capturer">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-capture-d'écran-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="tvMenu" layoutX="55.0" layoutY="163.0" prefHeight="558.0" prefWidth="1144.0" stylesheets="@list.css">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="364.7999687194824" text="Nom" />
+          <TableColumn fx:id="description" prefWidth="778.4000244140625" text="Description" />
+        </columns>
+      </TableView>
+      <Button fx:id="Ajout" layoutX="104.0" layoutY="72.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="154.0" styleClass="btn" stylesheets="@list.css" text="Ajouter Menu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-add-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Trier1" layoutX="765.0" layoutY="72.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" styleClass="btn" stylesheets="@dashboardDesign.css" text="Description" />
+      <Label layoutX="675.0" layoutY="46.0" text="Trier Selon :" textFill="#720000">
+         <font>
+            <Font name="Cambria Bold" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

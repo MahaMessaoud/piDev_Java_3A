@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.RegistrationAdminController">
+   <children>
+      <TextField fx:id="usernameA" layoutX="809.0" layoutY="128.0" prefHeight="32.0" prefWidth="378.0" promptText="entrez votre nom" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-width: 0 0 1 0;" />
+      <TextField fx:id="emailA" layoutX="809.0" layoutY="179.0" prefHeight="32.0" prefWidth="378.0" promptText="..@gmail.com" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-width: 0 0 1 0;" />
+      <TextField fx:id="num_telA" layoutX="809.0" layoutY="230.0" prefHeight="32.0" prefWidth="378.0" promptText="22 22 22 22 " style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-width: 0 0 1 0;" />
+      <Button fx:id="RegisterA" layoutX="876.0" layoutY="643.0" mnemonicParsing="false" onAction="#sisncrire" prefHeight="49.0" prefWidth="257.0" style="-fx-background-color: #720000;" text="S'inscrire" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="824.0" layoutY="29.0" text="S'inscrire Admin" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="date_nA" layoutX="807.0" layoutY="286.0" prefHeight="32.0" prefWidth="378.0" promptText="yyyy/mm/dd" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-width: 0 0 1 0;" />
+      <PasswordField fx:id="pwdA" layoutX="805.0" layoutY="439.0" prefHeight="32.0" prefWidth="378.0" promptText="********" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-width: 0 0 1 0;" />
+      <Label layoutX="817.0" layoutY="476.0" prefHeight="21.0" prefWidth="354.0" text="Veuillez entrer le texte que vous voyez dans l'image :" textFill="#720000" />
+      <Canvas fx:id="captchaCanvas" height="66.0" layoutX="838.0" layoutY="505.0" width="266.0" />
+      <TextField fx:id="captchaField" layoutX="803.0" layoutY="570.0" prefHeight="32.0" prefWidth="378.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-width: 0 0 1 0;" />
+      <Button fx:id="btnImportAct" layoutX="1155.0" layoutY="325.0" mnemonicParsing="false" onAction="#ajouterImage" prefHeight="6.0" prefWidth="53.0" style="-fx-background-color: transparent;" styleClass="import-btn" textFill="#aeabab">
+         <graphic>
+            <ImageView fx:id="image" fitHeight="30.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8-upload-24.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="909.0" layoutY="324.0" prefHeight="18.0" prefWidth="214.0" text="Choisir l'image de l'activité" textFill="#720000">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgSpsInput" fitHeight="100.0" fitWidth="378.0" layoutX="806.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="779.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-user-30.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="779.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-mail-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="779.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-phone-30.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="779.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-calendar-10-30.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="778.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-password-30.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="773.0" layoutY="570.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-captcha-30.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-26.0" layoutY="-7.0" prefHeight="769.0" prefWidth="662.0" style="-fx-background-color: grey; -fx-background-radius: 30;">
+         <children>
+            <Button fx:id="registerAbonnee1" layoutX="469.0" layoutY="709.0" mnemonicParsing="false" onAction="#goRegisterClient" prefHeight="46.0" prefWidth="168.0" style="-fx-background-color: transparent;" text="Se Connecter " underline="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="296.0" fitWidth="249.0" layoutX="192.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/LogoBlack_1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="213.0" layoutY="490.0" prefHeight="47.0" prefWidth="386.0" text="Don’t dream of it.." textFill="#222020">
+               <font>
+                  <Font name="SansSerif Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="btnClose" layoutX="1189.0" layoutY="14.0" mnemonicParsing="false" onAction="#closW" style="-fx-background-color: transparent;" text="X">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="381.0" layoutY="544.0" prefHeight="38.0" prefWidth="176.0" text="Train for it." textFill="#222020">
+         <font>
+            <Font name="SansSerif Bold" size="34.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="81.0" fitWidth="113.0" layoutX="644.0" layoutY="7.0">
+         <image>
+            <Image url="@../Images/LogoGymBlack_1.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

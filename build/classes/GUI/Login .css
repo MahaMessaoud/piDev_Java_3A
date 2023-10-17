@@ -1,0 +1,28 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.transparent-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-text-fill: #ffffff; /* Cor do texto do botão */
+    -fx-padding: 10px 20px; /* Espaçamento interno do botão */
+}
+#login{
+    -fx-padding: 10;
+    -fx-border-style: solid inside;
+    -fx-border-width: 2;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #720000;
+}
+.text-field {
+    -fx-border-color: gray;
+}
+
+.text-field:focused {
+    -fx-border-color: #720000;
+}

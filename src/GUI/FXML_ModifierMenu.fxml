@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXML_ModifierMenuController">
+    <children>
+        <Label layoutX="171.0" layoutY="284.0" styleClass="label-ajout" stylesheets="@ajout.css" text="Nom :" />
+        <TextField fx:id="champCategories" layoutX="273.0" layoutY="280.0" prefHeight="26.0" prefWidth="216.0" promptText="Nom Menu" styleClass="textfield" stylesheets="@ajoutactivite.css" />
+        <Label layoutX="171.0" layoutY="326.0" styleClass="label-ajout" stylesheets="@ajout.css" text="Description :" />
+        <Button fx:id="btnModifier" layoutX="286.0" layoutY="490.0" mnemonicParsing="false" onAction="#modifierMenu" prefHeight="34.0" prefWidth="90.0" styleClass="btn" stylesheets="@ajoutactivite.css" text="Modifier" />
+      <Button fx:id="Annuler" layoutX="398.0" layoutY="490.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="90.0" styleClass="btn" stylesheets="@ajoutactivite.css" text="Annuler" />
+      <Button fx:id="Retour" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="66.0" styleClass="btn" stylesheets="@ajout.css">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/return.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="582.0" fitWidth="563.0" layoutX="670.0" layoutY="178.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/ajout.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="211.0" layoutY="177.0" prefHeight="52.0" prefWidth="216.0" text="Modifier un Menu" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="champDescription" layoutX="273.0" layoutY="322.0" prefHeight="114.0" prefWidth="216.0" promptText="Description du menu" styleClass="textarea" stylesheets="@ajout.css" />
+    </children>
+</AnchorPane>

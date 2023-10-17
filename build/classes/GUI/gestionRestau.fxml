@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="GestionRestaurant" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1233.0" styleClass="mainFxmlClass" stylesheets="@gestionRestau.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GestionRestauController">
+   <children>
+      <Label layoutX="400.0" layoutY="103.0" prefHeight="78.0" prefWidth="432.0" style="-fx-alignment: CENTER;" text="Gestion Restaurant" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="43.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMenu" layoutX="220.0" layoutY="241.0" mnemonicParsing="false" onAction="#open_listMenu" prefHeight="62.0" prefWidth="190.0" styleClass="btn" stylesheets="@gestionplanning.css" text="  Menu">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-menu-64.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnPlat" layoutX="840.0" layoutY="241.0" mnemonicParsing="false" onAction="#open_listPlat" prefHeight="62.0" prefWidth="190.0" styleClass="btn" stylesheets="@gestionplanning.css" text="  Plat">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-restaurant-60.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnReservation" layoutX="530.0" layoutY="241.0" mnemonicParsing="false" onAction="#open_listReservation" prefHeight="62.0" prefWidth="190.0" styleClass="btn" stylesheets="@gestionplanning.css" text="  Réservation">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-réservation-96.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="340.0" fitWidth="426.0" layoutX="455.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/bggg.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

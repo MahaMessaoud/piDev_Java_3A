@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ConsultAbPane" prefHeight="670.0" prefWidth="1233.0" stylesheets="@frontAbonnement.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ConsulterAbonnementController">
+   <children>
+      <ImageView fitHeight="457.0" fitWidth="771.0" layoutX="455.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/kisspng-white-square-area-text-picture-frame-white-frame-5a7ab2d15fd3f3.0471437715179906093925%20(1).png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="root" layoutX="577.0" layoutY="287.0" prefHeight="515.0" prefWidth="550.0" stylesheets="@frontAbonnement.css">
+         <children>
+            <VBox prefHeight="384.0" prefWidth="553.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="70.0" prefWidth="562.0" text=" Votre abonnement  en cours :" textFill="#2c234d">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="47.0" prefWidth="553.0">
+                     <children>
+                        <Label fx:id="etat" text="Label">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pack" prefHeight="47.0" prefWidth="553.0">
+                     <children>
+                        <Label fx:id="type" alignment="CENTER" contentDisplay="CENTER" text="Label">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="47.0" prefWidth="553.0">
+                     <children>
+                        <Label fx:id="prix" text="Label">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Durée :">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                       <JFXDatePicker fx:id="datePicker" defaultColor="#720000" prefHeight="21.0" prefWidth="259.0" stylesheets="@frontAbonnement.css">
+                           <HBox.margin>
+                              <Insets left="150.0" />
+                           </HBox.margin>
+                        </JFXDatePicker>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="200.0" fitWidth="180.0" layoutX="1000.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LogoGymBlack.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="803.0" fitWidth="563.0" layoutX="-51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/gallery21.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="returnIndex" layoutX="539.0" layoutY="46.0" mnemonicParsing="false" onAction="#back_Abonnemets" prefHeight="47.0" prefWidth="75.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-left-arrow-64.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>

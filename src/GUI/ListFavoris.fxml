@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="listFavPane" prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ListFavorisController">
+   <children>
+      <ComboBox fx:id="combo" layoutX="392.0" layoutY="139.0" prefHeight="31.0" prefWidth="195.0" styleClass="comboBox" stylesheets="@list.css" />
+      <Label layoutX="84.0" layoutY="139.0" text="Choisir votre plat préféré :" textFill="#720000">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="ajouter" layoutX="611.0" layoutY="128.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="143.0" styleClass="btn" stylesheets="@list.css" text=" Enregistrer" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-aimer-50.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <RadioButton fx:id="afficher" layoutX="949.0" layoutY="216.0" mnemonicParsing="false" style="-fx-text-fill: BLACK;" text="Afficher" textFill="#2c234d">
+         <font>
+            <Font name="Candara Bold Italic" size="19.0" />
+         </font>
+      </RadioButton>
+      <Text id="h" fill="#2c234d" fontSmoothingType="LCD" layoutX="71.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des plats favoris" wrappingWidth="374.458984375">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfRecherche" layoutX="645.0" layoutY="209.0" prefHeight="41.0" prefWidth="268.0" promptText="recherche.." style="-fx-border-color: white;" styleClass="search" stylesheets="@list.css" />
+      <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="874.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/icons8_search_500px.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="retour" layoutX="7.0" layoutY="4.0" mnemonicParsing="false" onAction="#redirectToList" styleClass="btn" stylesheets="@list.css" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/return.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ScrollPane layoutX="645.0" layoutY="255.0" prefHeight="455.0" prefWidth="428.0" stylesheets="@ScrollPan.css">
+         <content>
+            <VBox fx:id="Vboxlist" prefHeight="449.0" prefWidth="429.0" />
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="200.0" fitWidth="180.0" layoutX="1033.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LogoGymBlack.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="71.0" layoutY="37.0" text="PLATS FAVORIS" textFill="#f04e3c">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="523.0" fitWidth="374.0" layoutX="-5.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/kisspng-junk-food-indian-cuisine-hamburger-plate-5acfc90d98dd59.9649210615235668616261.png" />
+         </image>
+      </ImageView>
+   </children>
+ 
+</AnchorPane>

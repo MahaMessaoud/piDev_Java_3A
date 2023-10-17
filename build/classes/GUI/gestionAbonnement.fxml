@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="gestionAbonnement" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1233.0" stylesheets="@backAbonnement.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GestionAbonnementController">
+   <children>
+      <Button fx:id="btnPack" layoutX="840.0" layoutY="241.0" mnemonicParsing="false" onAction="#open_listPacks" prefHeight="62.0" prefWidth="190.0" styleClass="btn" stylesheets="@../../../../../Desktop/poJav/EnergyBoxApp/src/gui/gestionplanning.css" text="Pack" />
+      <Button fx:id="btnAbonnement" layoutX="530.0" layoutY="241.0" mnemonicParsing="false" onAction="#open_listAbonnnements" prefHeight="62.0" prefWidth="190.0" styleClass="btn" stylesheets="@../../../../../Desktop/poJav/EnergyBoxApp/src/gui/gestionplanning.css" text="Abonnement" />
+      <Button fx:id="btnPromotion" layoutX="220.0" layoutY="241.0" mnemonicParsing="false" onAction="#open_listPromotions" prefHeight="62.0" prefWidth="190.0" styleClass="btn" stylesheets="@../../../../../Desktop/poJav/EnergyBoxApp/src/gui/gestionplanning.css" text="Promotion" />
+      <ImageView fitHeight="310.0" fitWidth="667.0" layoutX="315.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/kisspng-medicine-balls-physical-fitness-exercise-crossfit-passionate-5ae17b42b43b98.0400836015247265947382.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="400.0" layoutY="103.0" prefHeight="78.0" prefWidth="449.0" style="-fx-alignment: CENTER;" text="Gestion Abonnement">
+         <font>
+            <Font name="Cambria Bold" size="43.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

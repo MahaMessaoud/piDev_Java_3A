@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AjoutComp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjoutCompetitionController">
+   <children>
+      <Label layoutX="198.0" layoutY="163.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="269.0" stylesheets="@ajoutcompetition.css" text="Ajouter une Compétition :" textAlignment="CENTER" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Nom :" textFill="#720000">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="332.0" text="Frais :" textFill="#720000">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="376.0" text="Date :" textFill="#720000">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="418.0" text="Maximum Participants :" textFill="#720000">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="452.0" text="Etat :" textFill="#720000">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font>
+      </Label>
+      <TextField fx:id="btNom" layoutX="280.0" layoutY="286.0" prefHeight="26.0" prefWidth="216.0" promptText="Nom Compétition" styleClass="textfield" stylesheets="@ajoutcompetition.css" />
+      <DatePicker fx:id="dateChoisi" layoutX="280.0" layoutY="369.0" prefHeight="26.0" prefWidth="216.0" promptText="Date Compétition" styleClass="datePicker" stylesheets="@ajoutcompetition.css" />
+      <TextField fx:id="btFrais" layoutX="280.0" layoutY="328.0" prefHeight="26.0" prefWidth="216.0" promptText="En Dinar" styleClass="textarea" stylesheets="@ajoutcompetition.css" />
+      <TextField fx:id="btMaxParticipants" layoutX="280.0" layoutY="409.0" prefHeight="26.0" prefWidth="216.0" promptText="De 1 jusqu'à 50 participants" styleClass="textarea" stylesheets="@ajoutcompetition.css" />
+      <RadioButton fx:id="btDisponible" layoutX="282.0" layoutY="453.0" mnemonicParsing="false" text="Disponible" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="btNonDisponible" layoutX="387.0" layoutY="453.0" mnemonicParsing="false" text="Non Disponible" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="btnClear" layoutX="313.0" layoutY="511.0" mnemonicParsing="false" onAction="#effacerTout" prefHeight="34.0" prefWidth="109.0" styleClass="btn" stylesheets="@ajoutcompetition.css" text="Effacer" />
+      <Button fx:id="btAjout" layoutX="433.0" layoutY="511.0" mnemonicParsing="false" onAction="#ajouterCompetitionn" prefHeight="34.0" prefWidth="109.0" styleClass="btn" stylesheets="@ajoutcompetition.css" text="Ajouter" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnReturn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back_ViewBack_Competition" prefHeight="34.0" prefWidth="66.0" styleClass="btn" stylesheets="@ajoutcompetition.css" textAlignment="CENTER">
+         <graphic>
+            <ImageView fx:id="btRetour" fitHeight="25.0" fitWidth="57.0" onDragDetected="#voirCompetition" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/return.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="582.0" fitWidth="600.0" layoutX="633.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/AbonneReg.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

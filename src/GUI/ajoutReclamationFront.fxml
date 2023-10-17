@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="addRecFrontPane" prefHeight="760.0" prefWidth="1233.0" styleClass="mainFxmlClass" stylesheets="@frontAbonnement.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjoutReclamationFrontController">
+   <children>
+      <ImageView fitHeight="761.0" fitWidth="609.0" layoutX="-8.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/c.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="642.0" layoutY="130.0" text="VOTRE RÉCLAMATION NOUS" textFill="#2c234d">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="642.0" layoutY="101.0" prefHeight="36.0" prefWidth="128.0" text="- RÉCLAMATION" textFill="#f04e3c" />
+      <ImageView fitHeight="78.0" fitWidth="116.0" layoutX="1080.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LogoGymBlack.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="683.0" layoutY="230.0" opacity="0.96" prefHeight="419.0" prefWidth="427.0" spacing="10.0">
+         <children>
+            <Label text="Nom : ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nomUser" prefHeight="35.0" prefWidth="355.0" promptText="Nom" styleClass="textfield" stylesheets="@ajoutactivite.css" />
+            <Label text="Email : ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailUser" prefHeight="35.0" prefWidth="355.0" promptText="Email" styleClass="textfield" stylesheets="@ajoutactivite.css" />
+            <Label text="Catégorie : ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Categorie" prefHeight="25.0" prefWidth="429.0" promptText="Catégorie" styleClass="comboBox" stylesheets="@listreclamation.css" />
+            <Label text="Objet : ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="objet" prefHeight="35.0" prefWidth="355.0" promptText="Objet" styleClass="textfield" stylesheets="@ajoutactivite.css" />
+            <Label text="Texte : ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="text" prefHeight="106.0" prefWidth="430.0" promptText="Texte.." styleClass="textarea" stylesheets="@ajoutactivite.css" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="40.0" top="20.0" />
+         </padding>
+      </VBox>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="btnEnvoyer" graphicTextGap="15.0" layoutX="971.0" layoutY="671.0" mnemonicParsing="false" onAction="#AjoutReclamation" prefHeight="43.0" prefWidth="100.0" styleClass="btn" stylesheets="@gestionreclamation.css" text="Envoyer" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Button>
+      <Button fx:id="returnDashboard" layoutX="626.0" layoutY="27.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="33.0" style="-fx-background-color: #fff;">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-go-back-64%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="642.0" layoutY="173.0" prefHeight="31.0" prefWidth="482.0" text="AIDE A AMELIORER NOTRE SERVICE!" textFill="#2c234d">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

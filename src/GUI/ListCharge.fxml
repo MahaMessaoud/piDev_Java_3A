@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ChargePane" prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ListChargeController">
+   <children>
+      <BorderPane layoutX="53.0" layoutY="66.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1100.0" stylesheets="@navsidebar.css">
+               <children>
+                  <AnchorPane fx:id="rootPane" layoutX="22.0" layoutY="104.0" prefHeight="567.0" prefWidth="926.0" style="-fx-background-color: white; -fx-background-radius: 10;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="104.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="495.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="495.0">
+                           <image>
+                              <Image url="@../Images/icons8-zoom-64.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="searchM" layoutX="532.0" layoutY="79.0" prefHeight="38.0" prefWidth="426.0" promptText="Rechercher.." AnchorPane.leftAnchor="532.0" />
+                        <TableView fx:id="tableCh" layoutX="55.0" layoutY="137.0" onMouseClicked="#handleTableRowSelection" prefHeight="481.0" prefWidth="1069.0" stylesheets="@listactivite.css" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="137.0">
+                           <columns>
+                              <TableColumn fx:id="colIdCh" prefWidth="54.0" text="ID" />
+                              <TableColumn fx:id="colFournisseurCh" prefWidth="246.0" text="Fournisseur" />
+                              <TableColumn fx:id="colMaterielCh" prefWidth="278.0" text="Matériel" />
+                              <TableColumn fx:id="colDateCh" prefWidth="225.0" text="Date Arrivage" />
+                              <TableColumn fx:id="colQttCh" prefWidth="265.0" text="Quantité" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="ajouterCh" layoutX="299.0" layoutY="74.0" mnemonicParsing="false" onAction="#versAjouterCh" prefHeight="39.0" prefWidth="48.0" styleClass="buttoButtonMenu" AnchorPane.leftAnchor="299.0">
+                           <graphic>
+                              <ImageView fitHeight="39.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="buttoButtonMenu">
+                                 <image>
+                                    <Image url="@../Images/icons8-add-48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Button fx:id="returnGestionCh" mnemonicParsing="false" onAction="#back_GF" styleClass="buttoButtonMenu" stylesheets="@navsidebar.css" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="7.0">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8-go-back-64_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="502.0" layoutY="38.0" text="Liste Charge">
+                     <font>
+                        <Font name="Cambria Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

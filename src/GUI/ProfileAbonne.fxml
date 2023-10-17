@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ProfileAbonneController">
+   <children>
+      <Pane prefHeight="99.0" prefWidth="1000.0" style="-fx-background-color: *;">
+         <children>
+            <Label fx:id="emailC1" layoutX="303.0" layoutY="164.0" text="  Mahamessaoud@gmail.com">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView depthTest="ENABLE" fitHeight="36.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8-mail-account-64_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="usernameC1" layoutX="309.0" layoutY="126.0" text="  Maha">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8-access-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="150.0" layoutY="26.0" text="Profile Details">
+               <font>
+                  <Font name="Cambria Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="usernameC" layoutX="591.0" layoutY="287.0" prefHeight="26.0" prefWidth="207.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-width: 0 0 1 0;" />
+      <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="540.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/userrrr.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="emailC" layoutX="204.0" layoutY="286.0" prefHeight="26.0" prefWidth="207.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-width: 0 0 1 0;" />
+      <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="151.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-mail-account-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="155.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-birth-date-48.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="num_telC" layoutX="597.0" layoutY="442.0" prefHeight="26.0" prefWidth="207.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-width: 0 0 1 0;" />
+      <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="549.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-keypad-48.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="save" layoutX="374.0" layoutY="642.0" mnemonicParsing="false" onAction="#Edituser" prefHeight="39.0" prefWidth="242.0" style="-fx-background-color: #720000;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="date_nC" layoutX="201.0" layoutY="442.0" prefHeight="26.0" prefWidth="207.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-width: 0 0 1 0;" />
+      <ImageView fx:id="profImg" fitHeight="90.0" fitWidth="112.0" layoutX="184.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

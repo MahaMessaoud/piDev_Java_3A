@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AjoutFournisseurPane" prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjoutFournisseurController">
+   <children>
+      <BorderPane layoutX="62.0" layoutY="75.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1100.0" stylesheets="@navsidebar.css">
+               <children>
+                  <AnchorPane focusTraversable="true" layoutX="123.0" layoutY="95.0" prefHeight="573.0" prefWidth="894.0" style="-fx-background-color: white; -fx-background-radius: 10;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="104.0">
+                     <children>
+                        <Label layoutX="217.0" layoutY="116.0" text="Nom :" AnchorPane.leftAnchor="217.0">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="217.0" layoutY="183.0" text="Contact :" AnchorPane.leftAnchor="217.0">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="217.0" layoutY="261.0" text="Email :" AnchorPane.leftAnchor="217.0">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="217.0" layoutY="334.0" prefHeight="26.0" prefWidth="85.0" text="Adresse :" AnchorPane.leftAnchor="217.0">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="ConfirmerAjoutF" layoutX="361.0" layoutY="431.0" mnemonicParsing="false" onAction="#ajouterF" prefHeight="45.0" prefWidth="62.0" styleClass="buttoButtonMenu" AnchorPane.leftAnchor="361.0">
+                           <graphic>
+                              <ImageView fitHeight="41.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8-task-completed-100.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <TextField fx:id="ajoutNomF" layoutX="333.0" layoutY="112.0" AnchorPane.leftAnchor="333.0" />
+                        <TextField fx:id="ajoutContactF" layoutX="333.0" layoutY="179.0" AnchorPane.leftAnchor="333.0" />
+                        <TextField fx:id="ajoutEmailF" layoutX="333.0" layoutY="256.0" AnchorPane.leftAnchor="333.0" />
+                        <TextField fx:id="ajoutAdresseF" layoutX="333.0" layoutY="330.0" AnchorPane.leftAnchor="333.0" />
+                        <Button fx:id="retourListF" mnemonicParsing="false" onAction="#retourListF" styleClass="buttoButtonMenu" stylesheets="@navsidebar.css" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="7.0">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8-go-back-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <ImageView fitHeight="384.0" fitWidth="489.0" layoutX="657.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/2-1-1024x772.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="443.0" layoutY="24.0" prefHeight="54.0" prefWidth="348.0" text="Ajouter Fournisseur" AnchorPane.leftAnchor="443.0" AnchorPane.rightAnchor="442.0" AnchorPane.topAnchor="24.0">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

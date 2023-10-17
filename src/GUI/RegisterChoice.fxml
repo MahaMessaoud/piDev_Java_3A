@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.RegisterChoiceController">
+   <children>
+      <Pane prefHeight="760.0" prefWidth="1233.0" style="-fx-background-color: #e8e6e6;">
+         <children>
+            <Button fx:id="btnClose" layoutX="1177.0" layoutY="16.0" mnemonicParsing="false" onAction="#closW" style="-fx-background-color: transparent;" text="X">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="805.0" fitWidth="673.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/abonnee_low.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="711.0" layoutY="254.0" prefHeight="126.0" prefWidth="499.0" text="S'inscrire comme abonnée" textFill="#222020">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+            <Button fx:id="registerAbonnee" layoutX="850.0" layoutY="386.0" mnemonicParsing="false" onAction="#goRegisterClient" prefHeight="54.0" prefWidth="213.0" style="-fx-background-color: #720000;" text="S'incrire" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="registerAbonnee1" layoutX="994.0" layoutY="683.0" mnemonicParsing="false" onAction="#goLogin" prefHeight="54.0" prefWidth="213.0" style="-fx-background-color: transparent;" text="Se Connecter " underline="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>

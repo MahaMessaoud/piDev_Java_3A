@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DetailMaterielController">
+   <children>
+      <BorderPane layoutX="53.0" layoutY="66.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane id="AnchorPane" fx:id="DetMateriel" prefHeight="700.0" prefWidth="1100.0" stylesheets="@navsidebar.css">
+               <children>
+                  <AnchorPane focusTraversable="true" prefHeight="535.0" prefWidth="866.0" style="-fx-background-color: white; -fx-background-radius: 10;" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="104.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Button fx:id="retourListM" layoutX="7.0" layoutY="7.0" mnemonicParsing="false" onAction="#returnListF" styleClass="buttoButtonMenu" stylesheets="@navsidebar.css" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="7.0">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8-go-back-64_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="labidM" alignment="CENTER" layoutX="462.0" layoutY="119.0" prefHeight="45.0" prefWidth="266.0" style="-fx-border-color: #720000; -fx-background-color: white$; -fx-background-radius: 10; -fx-border-radius: 10;" text="id matériel" textAlignment="CENTER" AnchorPane.leftAnchor="462.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Calibri Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labnomM" alignment="CENTER" layoutX="462.0" layoutY="189.0" prefHeight="45.0" prefWidth="266.0" style="-fx-border-color: #720000; -fx-background-color: white$; -fx-background-radius: 10; -fx-border-radius: 10;" text="nom matériel" textAlignment="CENTER" AnchorPane.leftAnchor="462.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Calibri Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labrefM" alignment="CENTER" layoutX="462.0" layoutY="259.0" prefHeight="45.0" prefWidth="266.0" style="-fx-border-color: #720000; -fx-background-color: white$; -fx-background-radius: 10; -fx-border-radius: 10;" text="reference matériel" textAlignment="CENTER" AnchorPane.leftAnchor="462.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Calibri Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labdmM" alignment="CENTER" layoutX="462.0" layoutY="329.0" prefHeight="45.0" prefWidth="266.0" style="-fx-border-color: #720000; -fx-background-color: white$; -fx-background-radius: 10; -fx-border-radius: 10;" text="01/01/2000" textAlignment="CENTER" AnchorPane.leftAnchor="462.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Calibri Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labqtM" alignment="CENTER" layoutX="462.0" layoutY="399.0" prefHeight="45.0" prefWidth="266.0" style="-fx-border-color: #720000; -fx-background-color: white$; -fx-background-radius: 10; -fx-border-radius: 10;" text="2000" textAlignment="CENTER" AnchorPane.leftAnchor="462.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Calibri Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="265.0" layoutY="198.0" text="Nom :" AnchorPane.leftAnchor="265.0">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="265.0" layoutY="269.0" text="Réference :" AnchorPane.leftAnchor="265.0">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="265.0" layoutY="129.0" text="ID :" AnchorPane.leftAnchor="265.0">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="265.0" layoutY="339.0" text="Date maintenance :" AnchorPane.leftAnchor="265.0">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="265.0" layoutY="409.0" prefHeight="26.0" prefWidth="101.0" text="Quantité :" AnchorPane.leftAnchor="265.0">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <AmbientLight color="CHARTREUSE" layoutX="62.0" layoutY="260.0" lightOn="true" />
+                        <Button fx:id="suppM" layoutX="646.0" layoutY="476.0" mnemonicParsing="false" onAction="#suppF" styleClass="buttoButtonMenu" AnchorPane.leftAnchor="646.0">
+                           <graphic>
+                              <ImageView fitHeight="36.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8-delete-trash-50.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="modifM" layoutX="488.0" layoutY="473.0" mnemonicParsing="false" onAction="#handleModifierF" styleClass="buttoButtonMenu" AnchorPane.leftAnchor="488.0">
+                           <graphic>
+                              <ImageView fitHeight="41.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8-edit-64%20(2).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="454.0" layoutY="38.0" text="Detail Materiel">
+                     <font>
+                        <Font name="Cambria Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

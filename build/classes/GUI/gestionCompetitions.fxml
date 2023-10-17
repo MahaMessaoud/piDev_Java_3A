@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="GestionCompetition" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1234.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GestionCompetitionsController">
+   <children>
+      <Button fx:id="btnBack" layoutX="217.0" layoutY="177.0" mnemonicParsing="false" onAction="#viewBacck" prefHeight="46.0" prefWidth="226.0" styleClass="btn" stylesheets="@../../../../Downloads/EnergyBoxApp/src/gui/gestionplanning.css" text="Competition Pour l'admin" />
+      <Button fx:id="btnFront" layoutX="217.0" layoutY="266.0" mnemonicParsing="false" onAction="#opviewFroont" prefHeight="46.0" prefWidth="226.0" styleClass="btn" stylesheets="@../../../../Downloads/EnergyBoxApp/src/gui/gestionplanning.css" text="Competition Pour Le Client" />
+   </children>
+</AnchorPane>

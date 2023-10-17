@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="GRessourcePane" prefHeight="760.0" prefWidth="1233.0" stylesheets="@navsidebar.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GestionRessourceController">
+   <children>
+      <Button fx:id="GestionF" layoutX="214.0" layoutY="288.0" mnemonicParsing="false" onAction="#GoToF" prefHeight="62.0" prefWidth="190.0" styleClass="btn" stylesheets="@gestionplanning.css" text="Fournisseurs" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="GestionC" layoutX="856.0" layoutY="283.0" mnemonicParsing="false" onAction="#GoToC" prefHeight="62.0" prefWidth="190.0" styleClass="btn" stylesheets="@gestionplanning.css" text="Charges" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="GestionM" layoutX="539.0" layoutY="285.0" mnemonicParsing="false" onAction="#GoToM" prefHeight="62.0" prefWidth="190.0" styleClass="btn" stylesheets="@gestionplanning.css" text="Matériaux" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="returnR" mnemonicParsing="false" onAction="#puser" styleClass="buttoButtonMenu" stylesheets="@navsidebar.css" />
+      <Label layoutX="480.0" layoutY="106.0" text="Gestion Ressource">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="315.0" fitWidth="506.0" layoutX="449.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/girlPlaying-depositphotos-bgremover.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

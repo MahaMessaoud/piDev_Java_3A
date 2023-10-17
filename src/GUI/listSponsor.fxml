@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="listSps" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ListSponsorController">
+   <children>
+      <Button id="ajoutSps" fx:id="AjoutS" layoutX="104.0" layoutY="72.0" mnemonicParsing="false" onAction="#open_Ajout_Sps" onMouseClicked="#AddV" prefHeight="42.0" prefWidth="177.0" styleClass="btn" stylesheets="@listactivite.css" text="      Ajouter Sponsor" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="TableSponsor" editable="true" layoutX="67.0" layoutY="163.0" prefHeight="558.0" prefWidth="1098.0" stylesheets="@listactivite.css" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="ids" editable="true" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="nomSps" prefWidth="291.2000427246094" text="Nom Sponsor" />
+            <TableColumn fx:id="Dsps" prefWidth="181.59994506835938" text="Donnation" />
+            <TableColumn fx:id="Isps" prefWidth="195.20001220703125" text="Image " />
+            <TableColumn fx:id="act" prefWidth="355.19989013671875" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="31.0" fitWidth="122.0" layoutX="111.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-add-64.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="closW" layoutX="1165.0" layoutY="14.0" minWidth="31.0" mnemonicParsing="false" onAction="#closeW" prefHeight="30.0" prefWidth="31.0" style="-fx-background-color: #720000;" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="23.0" fitWidth="31.0" layoutX="682.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8_search_500px.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtSearchSponsor" layoutX="427.0" layoutY="73.0" prefHeight="40.0" prefWidth="282.0" promptText="Search..." styleClass="search" stylesheets="@listactivite.css" />
+   </children>
+</AnchorPane>

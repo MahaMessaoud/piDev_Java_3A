@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="addReclamationPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="757.0" prefWidth="1233.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjoutReclamationController">
+    <stylesheets>
+        <URL value="@ajoutreclamation.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="191.0" layoutY="280.0" prefHeight="17.0" prefWidth="57.0" styleClass="label-ajout" stylesheets="@ajoutplanning.css" text="Nom :" />
+      <Label layoutX="191.0" layoutY="322.0" prefHeight="17.0" prefWidth="57.0" styleClass="label-ajout" stylesheets="@ajoutplanning.css" text="Email :" />
+      <Label layoutX="191.0" layoutY="363.0" prefHeight="18.0" prefWidth="102.0" styleClass="label-ajout" stylesheets="@ajoutplanning.css" text="Objet :" />
+      <Label layoutX="191.0" layoutY="403.0" prefHeight="18.0" prefWidth="86.0" styleClass="label-ajout" stylesheets="@ajoutplanning.css" text="Catégorie :" />
+      <Button fx:id="btnAddRec" layoutX="429.0" layoutY="598.0" mnemonicParsing="false" onAction="#AjoutReclamation" prefHeight="34.0" prefWidth="77.0" styleClass="btn" stylesheets="@ajoutreclamation.css" text="Ajouter" />
+      <Button fx:id="btnClearRec" layoutX="339.0" layoutY="598.0" mnemonicParsing="false" onAction="#clearFieldsReclamation" prefHeight="34.0" prefWidth="77.0" styleClass="btn" stylesheets="@ajoutreclamation.css" text="Annuler" />
+      <Label layoutX="211.0" layoutY="122.0" prefHeight="52.0" prefWidth="270.0" text="Ajouter une Réclamation" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnReturnReclamation" layoutX="34.0" layoutY="34.0" mnemonicParsing="false" onAction="#return_ListReclamation" prefHeight="34.0" prefWidth="66.0" styleClass="btn" stylesheets="@ajoutreclamation.css">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/return.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TextField fx:id="textNomUserRec" layoutX="293.0" layoutY="276.0" prefHeight="26.0" prefWidth="216.0" promptText="Nom User" styleClass="textfield" stylesheets="@ajoutreclamation.css" />
+      <TextField fx:id="textEmailUserRec" layoutX="293.0" layoutY="318.0" prefHeight="26.0" prefWidth="216.0" promptText="Email User" styleClass="textfield" stylesheets="@ajoutreclamation.css" />
+      <TextField fx:id="textObjetRec" layoutX="293.0" layoutY="359.0" prefHeight="26.0" prefWidth="216.0" promptText="Objet Réclamation" styleClass="textfield" stylesheets="@ajoutreclamation.css" />
+      <TextArea fx:id="textTexteRec" layoutX="293.0" layoutY="483.0" prefHeight="58.0" prefWidth="216.0" promptText="Texte Réclamation" styleClass="textarea" stylesheets="@ajoutreclamation.css" />
+      <DatePicker fx:id="txtDateRec" layoutX="294.0" layoutY="440.0" prefHeight="26.0" prefWidth="216.0" promptText="Date Réclamation" styleClass="datePicker" stylesheets="@ajoutreclamation.css" />
+      <Label layoutX="191.0" layoutY="444.0" prefHeight="18.0" prefWidth="86.0" styleClass="label-ajout" stylesheets="@ajoutplanning.css" text="Date :" />
+      <Label layoutX="191.0" layoutY="481.0" prefHeight="18.0" prefWidth="86.0" styleClass="label-ajout" stylesheets="@ajoutplanning.css" text="Texte :" />
+      <ImageView fitHeight="582.0" fitWidth="600.0" layoutX="747.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/CoachReg.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="textCategRec" layoutX="293.0" layoutY="400.0" prefHeight="26.0" prefWidth="216.0" promptText="Catégorie Réclamation" styleClass="comboBox" stylesheets="@ajoutreclamation.css" />
+   </children>
+</AnchorPane>

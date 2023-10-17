@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="CaptchaPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CaptchaaController">
+   <children>
+      <Button fx:id="submit" layoutX="406.0" layoutY="579.0" mnemonicParsing="false" onAction="#submit" prefHeight="34.0" prefWidth="166.0" styleClass="btn" stylesheets="@list.css" text="Enregistrer " />
+      <Button fx:id="reset" layoutX="585.0" layoutY="579.0" mnemonicParsing="false" onAction="#reseting" prefHeight="34.0" prefWidth="166.0" styleClass="btn" stylesheets="@list.css" text="Réinitialiser" />
+      <ImageView fx:id="cap" fitHeight="287.0" fitWidth="477.0" layoutX="415.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="code" layoutX="415.0" layoutY="517.0" prefHeight="45.0" prefWidth="339.0" promptText="Ecrire le code ici .." styleClass="textfield" stylesheets="@ajoutreponse.css" />
+      <Text id="h" fill="#2c234d" fontSmoothingType="LCD" layoutX="282.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Merci de résoudre ce captcha pour" wrappingWidth="835.458984375">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="Retour" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#back_Front_Plat" prefHeight="34.0" prefWidth="30.0" styleClass="btn" stylesheets="@list.css">
+         <graphic>
+            <ImageView fitHeight="66.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/return.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="200.0" fitWidth="180.0" layoutX="1025.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LogoGymBlack.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="368.0" layoutY="108.0" text=" continuer le procesus !" textFill="#2c234d">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

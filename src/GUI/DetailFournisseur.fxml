@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DetFournisseurPane" prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DetailFournisseurController">
+   <children>
+      <BorderPane layoutX="62.0" layoutY="75.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1100.0" stylesheets="@navsidebar.css">
+               <children>
+                  <AnchorPane focusTraversable="true" layoutX="23.0" layoutY="104.0" prefHeight="614.0" prefWidth="1021.0" style="-fx-background-color: white; -fx-background-radius: 10;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="104.0">
+                     <children>
+                        <Button fx:id="retourlisttF" layoutX="7.0" layoutY="7.0" mnemonicParsing="false" onAction="#returnListF" styleClass="buttoButtonMenu" stylesheets="@navsidebar.css" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="7.0">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8-go-back-64_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="labIDF" alignment="CENTER" layoutX="416.0" layoutY="137.0" prefHeight="45.0" prefWidth="266.0" style="-fx-border-color: #720000; -fx-background-color: white$; -fx-background-radius: 10; -fx-border-radius: 10;" text="id fournisseur" textAlignment="CENTER" AnchorPane.leftAnchor="416.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Calibri Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labNomF" alignment="CENTER" layoutX="416.0" layoutY="207.0" prefHeight="45.0" prefWidth="266.0" style="-fx-border-color: #720000; -fx-background-color: white$; -fx-background-radius: 10; -fx-border-radius: 10;" text="nom fournisseur " textAlignment="CENTER" AnchorPane.leftAnchor="416.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Calibri Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labContactF" alignment="CENTER" layoutX="416.0" layoutY="277.0" prefHeight="45.0" prefWidth="266.0" style="-fx-border-color: #720000; -fx-background-color: white$; -fx-background-radius: 10; -fx-border-radius: 10;" text="contact fournisseur" textAlignment="CENTER" AnchorPane.leftAnchor="416.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Calibri Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labEmailF" alignment="CENTER" layoutX="416.0" layoutY="347.0" prefHeight="45.0" prefWidth="266.0" style="-fx-border-color: #720000; -fx-background-color: white$; -fx-background-radius: 10; -fx-border-radius: 10;" text="email@f.tn" textAlignment="CENTER" AnchorPane.leftAnchor="416.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Calibri Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labAdrF" alignment="CENTER" layoutX="416.0" layoutY="417.0" prefHeight="45.0" prefWidth="266.0" style="-fx-border-color: #720000; -fx-background-color: white$; -fx-background-radius: 10; -fx-border-radius: 10;" text="adresse fournisseur" textAlignment="CENTER" AnchorPane.leftAnchor="416.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Calibri Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="318.0" layoutY="218.0" text="Nom :" AnchorPane.leftAnchor="318.0">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="318.0" layoutY="288.0" text="Contact :" AnchorPane.leftAnchor="318.0">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="318.0" layoutY="148.0" text="ID :" AnchorPane.leftAnchor="318.0">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="318.0" layoutY="358.0" text="Email :" AnchorPane.leftAnchor="318.0">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="318.0" layoutY="428.0" prefHeight="26.0" prefWidth="85.0" text="Adresse :" AnchorPane.leftAnchor="318.0">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="SupprimerF" layoutX="595.0" layoutY="522.0" mnemonicParsing="false" onAction="#suppF" styleClass="buttoButtonMenu" AnchorPane.leftAnchor="595.0">
+                           <graphic>
+                              <ImageView fitHeight="36.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8-delete-trash-50.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="ModifierF" layoutX="437.0" layoutY="519.0" mnemonicParsing="false" onAction="#handleModifierF" styleClass="buttoButtonMenu" AnchorPane.leftAnchor="437.0">
+                           <graphic>
+                              <ImageView fitHeight="41.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8-edit-64%20(2).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="sendMail" layoutX="801.0" layoutY="271.0" mnemonicParsing="false" onAction="#sendMail" prefHeight="51.0" prefWidth="62.0" styleClass="buttoButtonMenu">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8-send-50.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="mailer" alignment="CENTER" layoutX="707.0" layoutY="329.0" prefHeight="23.0" prefWidth="257.0">
+                           <font>
+                              <Font name="Calibri Italic" size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="waiting" fitHeight="23.0" fitWidth="23.0" layoutX="824.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8-loading-circle.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="454.0" layoutY="53.0" text="Detail Fournisseur">
+                     <font>
+                        <Font name="Cambria Bold" size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

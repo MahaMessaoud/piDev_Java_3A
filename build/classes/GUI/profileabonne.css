@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.primary-color{
+    -fx-background-color:#720000;
+}
+.secondary-color{
+    -fx-background-color:#222020;
+    
+}

@@ -1,0 +1,18 @@
+.dialog-pane {
+    -fx-background-color: linear-gradient(to bottom,#222020, #605c5c , #720000);
+}
+
+.dialog-pane > *.content {
+    -fx-text-fill: black;
+}
+
+.dialog-pane > *.button-bar > *.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+.custom-alert {
+    -fx-background-image: url("alert-background.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}

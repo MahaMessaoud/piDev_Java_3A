@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="AjoutPlatPane" prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXML_AjouterReservationController">
+   <children>
+      <Text fill="#2c234d" fontSmoothingType="LCD" layoutX="116.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Réserver un plat" textAlignment="CENTER" wrappingWidth="315.458984375">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="Reserver" layoutX="248.0" layoutY="504.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" style="-fx-background-color: #720000;" styleClass="btn" stylesheets="@ajoutreclamation.css" text="Réserver" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="Retour" layoutX="26.0" layoutY="14.0" mnemonicParsing="false" onAction="#back_Front_Plat" prefHeight="40.0" prefWidth="45.0" style="-fx-background-color: #720000;" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/return.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="Annuler" layoutX="369.0" layoutY="504.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" style="-fx-background-color: #720000;" styleClass="btn" stylesheets="@ajoutreponse.css" text="Annuler" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="115.0" layoutY="367.0" text="Date :" textFill="#720000">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font></Label>
+      <DatePicker fx:id="fxdate" layoutX="249.0" layoutY="367.0" prefHeight="26.0" prefWidth="216.0" promptText="Choisir une date" styleClass="textfield" stylesheets="@ajoutreclamation.css" />
+      <Label layoutX="116.0" layoutY="312.0" text="Plat :" textFill="#720000">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combo" layoutX="249.0" layoutY="313.0" prefHeight="26.0" prefWidth="216.0" promptText="Choisir un plat" styleClass="textfield" stylesheets="@ajoutreclamation.css" />
+      <TextField fx:id="teluser" layoutX="248.0" layoutY="423.0" prefHeight="26.0" prefWidth="216.0" promptText="Saisir votre téléphone" styleClass="textfield" stylesheets="@ajoutreclamation.css" />
+      <Label layoutX="113.0" layoutY="425.0" text="Téléphone:" textFill="#720000">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="fb" fitHeight="32.0" fitWidth="34.0" layoutX="1062.0" layoutY="697.0" onMouseClicked="#openFacebook" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Facebook_icon.svg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="insta" fitHeight="34.0" fitWidth="32.0" layoutX="1113.0" layoutY="698.0" onMouseClicked="#openInstagram" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/340094588_835187387962662_6498300519602814538_n.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1062.0" layoutY="663.0" text="Contacter nous" textFill="#720000">
+         <font>
+            <Font name="Cambria Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="chat" fitHeight="36.0" fitWidth="39.0" layoutX="1167.0" layoutY="694.0" onMouseClicked="#openChatBot" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-chatbot-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="393.0" fitWidth="548.0" layoutX="610.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/kisspng-meal-dinner-free-content-clip-art-free-dinner-clipart-5a8adefba978a8.3322726115190504916942.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="142.0" layoutY="149.0" text="RESERVATION" textFill="#f04e3c">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

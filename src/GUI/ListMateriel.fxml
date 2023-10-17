@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ListMatPane" prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ListMaterielController">
+   <children>
+      <BorderPane layoutX="62.0" layoutY="75.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane id="AnchorPane" prefHeight="770.0" prefWidth="1100.0" stylesheets="@navsidebar.css">
+               <children>
+                  <AnchorPane prefHeight="620.0" prefWidth="800.0" style="-fx-background-color: white; -fx-background-radius: 10;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <children>
+                        <TableView fx:id="tableM" layoutX="51.0" layoutY="129.0" onMouseClicked="#handleTableRowSelectionM" prefHeight="548.0" prefWidth="1115.0" stylesheets="@listactivite.css" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="51.0" AnchorPane.topAnchor="129.0">
+                           <columns>
+                              <TableColumn fx:id="idM" prefWidth="150.0" text="ID" />
+                              <TableColumn fx:id="nomM" prefWidth="150.0" text="Nom" />
+                              <TableColumn fx:id="refM" prefWidth="203.0" text="Reference" />
+                              <TableColumn fx:id="maintM" prefWidth="283.0" text="Maintenance" />
+                              <TableColumn fx:id="qtM" prefWidth="327.0" text="Quantité" />
+                           </columns>
+                        </TableView>
+                        <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="385.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="385.0" AnchorPane.topAnchor="78.0">
+                           <image>
+                              <Image url="@../Images/icons8-zoom-64.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="searchM" layoutX="416.0" layoutY="75.0" prefHeight="38.0" prefWidth="455.0" promptText="Rechercher" AnchorPane.leftAnchor="416.0" AnchorPane.topAnchor="75.0" />
+                        <Button fx:id="ajoutListM" layoutX="289.0" layoutY="75.0" mnemonicParsing="false" onAction="#goToAjoutM" prefHeight="39.0" prefWidth="48.0" styleClass="buttoButtonMenu" AnchorPane.leftAnchor="289.0" AnchorPane.topAnchor="75.0">
+                           <graphic>
+                              <ImageView fitHeight="39.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="buttoButtonMenu">
+                                 <image>
+                                    <Image url="@../Images/icons8-add-48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Button fx:id="retunToGestion" mnemonicParsing="false" onAction="#back_GF" styleClass="buttoButtonMenu" stylesheets="@navsidebar.css" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="7.0">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8-go-back-64_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="statt" layoutX="1031.0" layoutY="86.0" mnemonicParsing="false" onAction="#goStat" styleClass="buttoButtonMenu" stylesheets="@navsidebar.css" text="Stat" AnchorPane.leftAnchor="1031.0" AnchorPane.topAnchor="86.0">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8-statistic-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Calibri Bold Italic" size="15.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="489.0" layoutY="10.0" text="Liste Materiaux">
+                           <font>
+                              <Font name="Cambria Bold" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

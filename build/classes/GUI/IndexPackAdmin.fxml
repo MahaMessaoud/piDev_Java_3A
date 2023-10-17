@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="listPackPane" prefHeight="760.0" prefWidth="1233.0" stylesheets="@backAbonnement.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.IndexPackAdminController">
+   <children>
+      <BorderPane prefHeight="670.0" prefWidth="1233.0">
+         <center>
+            <AnchorPane prefHeight="746.0" prefWidth="1234.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="280.0" fitWidth="552.0" layoutX="695.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/kisspng-white-square-area-text-picture-frame-white-frame-5a7ab2d15fd3f3.0471437715179906093925%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="packTable" editable="true" layoutX="67.0" layoutY="125.0" onSort="#Load" prefHeight="282.0" prefWidth="1098.0">
+                    <columns>
+                        <TableColumn fx:id="id" prefWidth="69.60001373291016" text="ID" />
+                        <TableColumn fx:id="type_pack" prefWidth="138.39999389648438" text="Type Pack" />
+                        <TableColumn fx:id="montantPack" prefWidth="132.0" text="Montant" />
+                        <TableColumn fx:id="dureePack" prefWidth="100.0" text="Durée" />
+                        <TableColumn fx:id="descriptionPack" prefWidth="219.2000732421875" text="Description" />
+                      <TableColumn fx:id="placesPack" prefWidth="104.79998779296875" text="Places" />
+                      <TableColumn fx:id="disponibilitePack" prefWidth="157.5999755859375" text="Disponibilité" />
+                        <TableColumn fx:id="action" prefWidth="174.4000000000001" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="bntAjouterPack" layoutX="120.0" layoutY="52.0" mnemonicParsing="false" onAction="#open_AjoutPack" prefHeight="47.0" prefWidth="221.0" styleClass="btn" stylesheets="@listactivite.css" text="Ajouter un pack">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="searchP" layoutX="499.0" layoutY="58.0" prefHeight="34.0" prefWidth="262.0" promptText="Search.." styleClass="search" stylesheets="@listactivite.css" />
+                  <BarChart fx:id="stat" layoutX="178.0" layoutY="444.0" prefHeight="281.0" prefWidth="329.0" style="-fx-fill: red; -fx-bar-fill: green; -fx-text-fill: blue;" styleClass="statistiquee" stylesheets="@backAbonnement.css">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <VBox fx:id="vbox" layoutX="765.0" layoutY="511.0" prefHeight="166.0" prefWidth="389.0" spacing="15.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="960.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_search_500px_1_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

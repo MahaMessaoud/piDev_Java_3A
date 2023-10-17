@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat GPT</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css" />
+    
+
+</head>
+<body onload="OnLoad()">
+
+    
+    <div class="loader">
+        <span class="lettre">E</span>
+        <span class="lettre">N</span>
+        <span class="lettre">E</span>
+        <span class="lettre">R</span>
+        <span class="lettre">G</span>
+        <span class="lettre">Y</span>
+        <span class="lettre">b</span>
+        <span class="lettre">o</span>
+        <span class="lettre">x</span><br>
+        <span class="lettre" style="color:#720000 !important;">f</span>
+        <span class="lettre" style="color:#720000 !important;">e</span>
+        <span class="lettre" style="color:#720000 !important;">e</span>
+        <span class="lettre" style="color:#720000 !important;">d</span>
+
+    </div>
+   
+    <div id="idContainer">
+<!--<iframe width="1550" id="wikipedia" height="1600" src="https://rss.app/embed/v1/wall/tAaPHSpHno0hRJTv" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe>-->
+<iframe width="1550" id="wikipedia" height="1600" src="https://rss.app/embed/v1/wall/tFa9ENK7OESzo9UR" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe>
+
+    </div>
+<script>
+    const loader = document.querySelector('.loader');
+    const container = document.getElementById('idContainer');
+
+    setTimeout(() => {
+        loader.classList.add('fondu-out');
+        container.style.display = 'block';
+    }, 4000); // 4 seconds delay
+</script>
+</body>
+</html>

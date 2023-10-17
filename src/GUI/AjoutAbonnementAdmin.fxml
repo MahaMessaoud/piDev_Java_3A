@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ajoutAbPane" prefHeight="760.0" prefWidth="1233.0" styleClass="mainFxmlClass" stylesheets="@backAbonnement.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjoutAbonnementAdminController">
+   <children>
+      <BorderPane prefHeight="670.0" prefWidth="1233.0">
+         <center>
+            <AnchorPane id="AnchorPane" prefHeight="670.0" prefWidth="474.0" stylesheets="@backAbonnement.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="99.0" layoutY="135.0" text="Ajouter un abonnement :" textFill="#720000">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="136.0" layoutY="200.0" opacity="0.96" prefHeight="265.0" prefWidth="338.0" spacing="15.0">
+                     <children>
+                        <Label text="Type Pack : ">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="textPack" prefWidth="150.0" promptText="Type pack" style="-fx-background-color: white;" />
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" />
+                        <Label text="Code promo :">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="codePromo" promptText="code promo" />
+                        <Label text="Utilisateur :">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="textUser" prefWidth="150.0" promptText="Utilisateur" style="-fx-background-color: white;" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="30.0" left="40.0" right="40.0" />
+                     </padding>
+                  </VBox>
+                  <Button fx:id="btnValider" layoutX="174.0" layoutY="524.0" mnemonicParsing="false" onAction="#ajouterF" prefHeight="43.0" prefWidth="131.0" styleClass="btn" stylesheets="@backAbonnement.css" text="Ajouter" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.0" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="bntReturnAbonnement" layoutX="63.0" layoutY="35.0" mnemonicParsing="false" onAction="#back_Abonnemets" prefHeight="52.0" prefWidth="72.0" style="-fx-background-color: transparent; -fx-text-fill: black; -fx-font-size: 16px;">
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8-left-arrow-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <ImageView fitHeight="595.0" fitWidth="895.0" layoutX="339.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/kisspng-physical-fitness-crossfit-exercise-idea-coach-aya-5b10e3bec1ec66.6869747415278335347943.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

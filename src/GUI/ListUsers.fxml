@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ListUsersController">
+    <stylesheets>
+        <URL value="@listUser.css" />
+    </stylesheets>
+    <children>
+        <TextField fx:id="search" layoutX="106.0" layoutY="73.0" prefHeight="40.0" prefWidth="282.0" promptText="Rechercher.." styleClass="search" stylesheets="@listactivite.css" />
+      <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="354.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8_search_500px.png" />
+         </image>
+      </ImageView>
+        <ComboBox fx:id="TriChoice" layoutX="959.0" layoutY="73.0" onAction="#TriChoice" prefHeight="42.0" prefWidth="144.0" promptText="Aucun" styleClass="comboBox" stylesheets="@listactivite.css" />
+      <TableView fx:id="TableUsers" layoutX="67.0" layoutY="163.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="1098.0">
+        <columns>
+          <TableColumn fx:id="emailuser" prefWidth="274.0" text="Email" />
+          <TableColumn fx:id="usernameU" prefWidth="144.0" text="Username" />
+            <TableColumn fx:id="date_nuser" prefWidth="161.0" text="Date de Naissance" />
+            <TableColumn fx:id="imageU" prefWidth="227.0" text="Image" />
+            <TableColumn fx:id="act" prefWidth="292.0" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

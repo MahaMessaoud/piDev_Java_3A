@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="RecEnvPane" prefHeight="760.0" prefWidth="1233.0" styleClass="mainFxmlClass" stylesheets="@frontAbonnement.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjouReclamationFrontEnvoyeeController">
+   <children>
+      <ImageView fitHeight="761.0" fitWidth="609.0" layoutX="-8.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/c.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="647.0" layoutY="358.0" text="VOTRE RÉCLAMATION A ÉTÉ ENVOYEÉ" textFill="#2c234d">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="647.0" layoutY="329.0" prefHeight="36.0" prefWidth="128.0" text="- RÉCLAMATION" textFill="#f04e3c" />
+      <ImageView fitHeight="78.0" fitWidth="116.0" layoutX="1080.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LogoGymBlack.png" />
+         </image>
+      </ImageView>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="returnAddRecFront" layoutX="626.0" layoutY="27.0" mnemonicParsing="false" onAction="#return_AddRecFront" prefHeight="15.0" prefWidth="33.0" style="-fx-background-color: #fff;">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-go-back-64%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="767.0" layoutY="400.0" prefHeight="31.0" prefWidth="306.0" text="LA RÉPONSE SERA DANS 48H." textFill="#2c234d">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane id="AnchorPane" fx:id="monAnchorPane" prefHeight="760.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXML_ReservationController">
+  
+    <children>
+      <StackPane layoutX="285.0" layoutY="33.0" />
+      <Button fx:id="refresh" layoutX="838.0" layoutY="85.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="102.0" styleClass="btn" stylesheets="@list.css" text="Afficher">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-available-updates-50.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="Stat" layoutX="652.0" layoutY="85.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="153.0" styleClass="btn" stylesheets="@list.css" text="Statistiques">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-rééquilibrer-le-portefeuille-100.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="Mailing" layoutX="139.0" layoutY="85.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" styleClass="btn" stylesheets="@list.css" text="Envoyer Email ">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/email.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TextField fx:id="saisieEmail" layoutX="324.0" layoutY="85.0" prefHeight="40.0" prefWidth="282.0" promptText="Email Destinataire" styleClass="search" stylesheets="@list.css" />
+      <TableView fx:id="tvReservation" layoutX="55.0" layoutY="163.0" prefHeight="558.0" prefWidth="1144.0" stylesheets="@list.css">
+        <columns>
+          <TableColumn fx:id="idreservation" prefWidth="148.00000762939453" text="ID Réservation" />
+          <TableColumn fx:id="idplat" minWidth="0.0" prefWidth="168.0" text="Plat" />
+            <TableColumn fx:id="date" minWidth="0.0" prefWidth="355.9999694824219" text="Date Réservation" />
+            <TableColumn fx:id="userid" minWidth="0.0" prefWidth="473.5999755859375" text="Email Utilisateur" />
+        </columns>
+      </TableView>
+      <Button fx:id="captureEcran" layoutX="967.0" layoutY="85.0" mnemonicParsing="false" prefHeight="40.0" styleClass="btn" stylesheets="@dashboardDesign.css" text="Capturer">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-capture-d'écran-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>
